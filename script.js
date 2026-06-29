@@ -4,36 +4,36 @@
 
 const products = [
     {
-        name: "Produkt 1",
-        brand: "Marke",
-        category: "Kategorie",
-        price: "Preis",
+        name: "Goyard Cardholder",
+        brand: "Goyard",
+        category: "Accesoires",
+        price: "3$",
         image: "https://via.placeholder.com/300x200",
         link: "https://example.com",
         badge: "HOT"
     },
     {
-        name: "Produkt 2",
-        brand: "Marke",
-        category: "Kategorie",
-        price: "Preis",
+        name: "Bouncing Hermes",
+        brand: "Hermes",
+        category: "Schuhe",
+        price: "40$",
         image: "https://via.placeholder.com/300x200",
         link: "https://example.com",
         badge: "NEW"
     },
     {
-        name: "Produkt 3",
-        brand: "Marke",
-        category: "Kategorie",
-        price: "Preis",
+        name: "Birkenstocks",
+        brand: "Birkenstock",
+        category: "Schuhe",
+        price: "16$",
         image: "https://via.placeholder.com/300x200",
         link: "https://example.com"
     },
     {
-        name: "Produkt 4",
-        brand: "Marke",
-        category: "Kategorie",
-        price: "Preis",
+        name: "Under Armour anzug",
+        brand: "Under Armour",
+        category: "T-shirt",
+        price: "3$",
         image: "https://via.placeholder.com/300x200",
         link: "https://example.com"
     },
