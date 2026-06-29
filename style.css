@@ -73,6 +73,7 @@ body {
 .search input {
     padding: 15px 18px;
     width: 380px;
+    max-width: 90%;
     border-radius: 14px;
     border: 1px solid rgba(255,255,255,0.08);
     background: rgba(255,255,255,0.03);
@@ -124,6 +125,7 @@ body {
 .card img {
     width: 100%;
     border-radius: 12px;
+    display: block;
 }
 
 .card h3 {
@@ -150,6 +152,26 @@ body {
     font-weight: 600;
 }
 
+/* BUTTON */
+.product-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 12px;
+    text-align: center;
+    background: linear-gradient(90deg, #7C5CFF, #FF3D81);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.product-btn:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -160,7 +182,35 @@ footer {
     font-size: 13px;
 }
 
-/* HIDDEN */
+/* SEARCH HIDE */
 .hidden {
     display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section {
+        padding: 30px 20px;
+    }
 }
