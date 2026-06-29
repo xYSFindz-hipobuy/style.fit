@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>xysfinds.com</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">xysfinds</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Deals</a>
+        <a href="#">Categories</a>
+        <a href="#">Discord</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Premium Street Finds</h1>
+    <p>Curated Deals • HipoBuy Community • Luxury Streetwear Picks</p>
+
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Search for finds..." onkeyup="searchItems()">
+    </div>
+</div>
+
+<!-- DEALS -->
+<div class="section">
+    <h2>🔥 TRENDING FINDS</h2>
+
+    <div class="grid" id="productGrid">
+
+        <div class="card">
+            <span class="badge">HOT</span>
+            <img src="https://via.placeholder.com/300x200">
+            <h3>Nike Tech Set</h3>
+            <div class="price">from 29€</div>
+        </div>
+
+        <div class="card">
+            <span class="badge">NEW</span>
+            <img src="https://via.placeholder.com/300x200">
+            <h3>Essentials Hoodie</h3>
+            <div class="price">from 19€</div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200">
+            <h3>Trapstar Jacket</h3>
+            <div class="price">from 39€</div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200">
+            <h3>Jordan 4 Retro</h3>
+            <div class="price">from 59€</div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 xysfinds.com • Street Luxury Finds Platform
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+function searchItems() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.querySelectorAll("#productGrid .card");
+
+    cards.forEach(card => {
+        let title = card.querySelector("h3").innerText.toLowerCase();
+
+        if (title.includes(input)) {
+            card.classList.remove("hidden");
+        } else {
+            card.classList.add("hidden");
+        }
+    });
+}
+
+
+
 
