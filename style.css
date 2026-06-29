@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #0D0D10;
+    color: #EAEAEA;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(23, 23, 28, 0.75);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FF3D81;
+}
+
+.nav-links a {
+    color: #bdbdbd;
+    margin-left: 22px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #FF3D81;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FF3D81, #7C5CFF, #22D3EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: 15px;
+    color: #aaa;
+    font-size: 15px;
+}
+
+/* SEARCH */
+.search {
+    margin-top: 30px;
+}
+
+.search input {
+    padding: 15px 18px;
+    width: 380px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    color: white;
+    outline: none;
+    backdrop-filter: blur(10px);
+}
+
+.search input::placeholder {
+    color: #777;
+}
+
+/* SECTION */
+.section {
+    padding: 60px;
+}
+
+.section h2 {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #FF3D81;
+    letter-spacing: 1.5px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 15px;
+    transition: 0.25s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(124,92,255,0.6);
+    box-shadow: 0 15px 35px rgba(124,92,255,0.15);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #bdbdbd;
+}
+
+/* BADGE */
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #22D3EE;
+    color: black;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    color: #666;
+    font-size: 13px;
+}
+
+/* HIDDEN */
+.hidden {
+    display: none;
+}
